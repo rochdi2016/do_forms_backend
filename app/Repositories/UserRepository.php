@@ -14,5 +14,6 @@ class UserRepository extends Repository
         $user->name = $data['name'];
         $user->password = $data['password'];
         $user->save();
+        return $user;
     }
 }
